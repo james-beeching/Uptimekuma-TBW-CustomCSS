@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --bs-font-sans-serif: "Lato", sans-serif !important;
+    --bs-font-monospace: "Lato", sans-serif !important;
+    --bs-body-font-family: "Lato", sans-serif !important;
+}
+
+html, body {
+    box-sizing: border-box !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#app > div > div.main > h1 > span:nth-child(3) {
+    color: white;
+}
+
+.dark {
+    background-color: #323640 !important;
+    font-family: "Lato", sans-serif !important;
+}
+
+.dark .bg-primary {
+    color: #DBDBDB;
+    background-color: transparent !important;
+}
+
+span.badge.rounded-pill.bg-primary {
+    background-color: transparent !important;
+    padding: 0px !important;
+    width: max-content !important;
+    min-width: max-content !important;
+    align-self: center !important;
+    justify-self: center !important;
+    text-align: center !important;
+}
+
+div.d-flex.justify-content-between.align-items-center.word > div {
+    color: rgb(104, 113, 132);
+}
+
+.logo.me-2 {
+    content:url("https://www.thebarcodewarehouse.co.uk/resources/TBW/images/Barcode%20Warehouse%20White%20orange.svg");
+    margin-right: 1rem !important;
+}
+
+.overall-status {
+    display: flex;
+    width: max-content !important;
+    padding: 12px !important;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    justify-self: flex-end;
+    /* border: 1px solid rgb(92, 221, 139);
+    background-color: rgba(92, 221, 139, 0.12156862745098039); */
+}
+
+.shadow-box {
+    background-color: transparent !important;
+}
+
+.overall-status > div {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 0px 0rem 0px 1rem !important;
+    gap: 0.66rem;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+}
+.overall-status > div > svg {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.title-flex {
+    gap: 0px !important;
+    height: max-content;
+    width: max-content;
+    margin: 0px !important;
+    flex-grow: 1;
+    grid-area: title;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.title-flex > span  {
+    display: flex;
+    justify-self: flex-start;
+}
+
+#app > div.container {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+.main {
+    top: 2.5vh;
+    display: grid;
+    grid-template-columns: 15% 15% 30% 40%;
+    grid-template-areas:
+        "title title buttons status"
+        "servers servers servers servers"
+        "footer footer footer footer";
+    flex-direction: column !important;
+    height: 95vh !important;
+    width: 100% !important;
+    position: relative;
+    gap: 2vh !important;
+}
+
+#app > div > div.main > div.alert-heading.p-2 {
+    display: none !important;
+}
+
+#app > div > div.main > footer > div.alert-heading.p-2 {
+    display: none !important;
+}
+
+#app > div > div.main > footer > div.refresh-info.mb-2 {
+    margin: 0px !important;
+}
+
+#app > div > div.main > div:nth-child(2) {
+    margin: 0px !important;
+    grid-area: buttons;
+}
+
+#app > div > div.main > div.shadow-box.list.p-4.overall-status.mb-4 {
+    margin: 0px !important;
+    grid-area: status;
+    position: relative;
+    height: max-content !important;
+    width: max-content !important;
+}
+
+div.main > div.mb-4 {
+    margin: 0px !important;
+    grid-area: servers;
+    justify-content: center;
+    align-content: center;
+}
+
+#app > div > div.main > footer {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: footer;
+}
+
+.mb-4>div:has(.mb-5) {
+    display: grid;
+    height: 100% !important;
+    grid-template-columns: 31.75% 31.75% 31.75%;
+    gap: 2rem !important;
+    grid-template-areas:
+        "server1 server2 server4"
+        "server1 server3 server4";
+}
+
+.mb-4>div>.mb-5 {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    background-color: #25262f;
+    margin-bottom: 0px !important;
+    border-radius: 12px !important;
+}
+
+.mb-4>div>.mb-5:nth-child(1) {
+    grid-area: server1;
+}
+
+.mb-4>div>.mb-5:nth-child(2) {
+    grid-area: server2;
+}
+
+.mb-4>div>.mb-5:nth-child(3) {
+    grid-area: server3;
+}
+
+.mb-4>div>.mb-5:nth-child(4) {
+    grid-area: server4;
+}
+
+div>div.col-9.col-md-8.small-padding {
+    width: 100% !important;
+}
+
+.group-title {
+    margin: 0px !important;
+    width: 100% !important;
+    background-color: #fd5f1a;
+    border-top-right-radius: 12px !important;
+    border-top-left-radius: 12px !important;
+}
+
+.group-title > span {
+    margin: 20px 22px 20px 22px !important;
+    width: 100% !important;
+    color: rgba(255, 255, 255, 1);
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.item-name {
+    display: flex;
+    flex-grow: 1;
+    color: rgba(255, 255, 255, 1);
+}
+
+.overall-status {
+    display: flex;
+    width: 100%;
+    grid-area: status;
+}
+
+.description {
+    display: flex;
+    width: 100%;
+}
+
+.monitor-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    background-color: #25262f !important;
+}
+
+.monitor-list .item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px !important;
+    border-top: 1px solid #687184;
+}
+
+.monitor-list .item:first-child {    
+    border-top: none !important;
+}
+
+.item .row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
